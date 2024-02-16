@@ -46,7 +46,7 @@
 
 #popupBody {
     width: 90%; /* Utilizar el 80% del ancho disponible */
-    height: 50%;
+    height: 100%;
    
     max-width: 900px; /* Establecer un ancho máximo */
     padding: 2%;
@@ -96,7 +96,7 @@
 @media screen and (max-width: 600px) {
     .NuevoPopup {
         width: 100%; /* Utilizar todo el ancho disponible */
-        height: auto;
+        height: 70%;
         overflow-x: auto; /* Permitir el desplazamiento horizontal si la tabla es más ancha que el contenedor */
     }
 

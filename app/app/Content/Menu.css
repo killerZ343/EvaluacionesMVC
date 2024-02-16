@@ -99,14 +99,15 @@ a{
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgb(210,6,6);
+    background-color: #000;
     border-radius: 16px;
     position: relative;
     border: 3px solid transparent;
     background-clip: padding-box;
     text-align: center;
     color: #f1f3f3;
-    background-image: linear-gradient(90deg, rgba(210,6,6,1) 0%, rgba(255,112,17,1) 35%, rgba(254,255,0,1) 100%);
+    background-image: linear-gradient(to right, #042b66, #002c4b, #002325, #03180b, #070706);
+    box-shadow: 0 0 20px #042b66;
 }
     .profile::after {
         content: "";
@@ -118,7 +119,7 @@ a{
         z-index: -1;
         position: absolute;
         border-radius: 16px;
-        background-image: linear-gradient(90deg, rgba(210,6,6,1) 0%, rgba(255,112,17,1) 35%, rgba(254,255,0,1) 100%);
+        background-image: #042b66;
     }
 .profile-image {
     border-radius: 50%;
@@ -166,7 +167,7 @@ a{
 }
     .profile-links .link1 {
         margin-right: 19px;
-        background-color: rgba(117, 46, 124, 0.35);
+        background-color: #042b66;
         border-radius: 10px;
         align-items: center;
         justify-content: center;
@@ -174,20 +175,21 @@ a{
     }
     .profile-links .link2 {
         margin-right: 19px;
-        background-color: rgba(117, 46, 124, 0.35);
+        background-color: #042b66;
         border-radius: 10px;
         align-items: center;
         justify-content: center;
         padding: 10px 20px;
     }
     .profile-links .link3 {
-        background-color: #31001d;
+        background-color: #042b66;
         border-radius: 10px;
         align-items: center;
         justify-content: center;
         padding: 10px 20px;
     }
 
-    .profile-links :hover {
-        text-decoration: #752e7c;
+    .profile-links .link1 :hover, .link2 :hover, .link3 :hover {
+        
+        text-decoration: #000;
     }

@@ -72,9 +72,6 @@ nav ul {
 
 table {
     margin-top: 60px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
     background-color: #fff;
     border-radius: 16px;
     position: relative;
@@ -83,23 +80,31 @@ table {
     text-align: center;
     text-justify: initial;
     color: #000;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px; /* Ajusta este valor según tu preferencia */
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        display: block;
+    }
+
+    th, td {
+        display: block;
+    }
 }
 
 
-table, th, td {
+table, tr, th {
     align-items: center;
     justify-content: center;
 }
 
 th {
+    display:flex;
     justify-content: center;
     align-items: center;
-}
-
-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 10px; /* Ajusta este valor según tu preferencia */
 }
 
 th, td {
